@@ -498,14 +498,45 @@ footer .alimentos{
                 grid-area: proce-salado;
             }
             
-            /* header */
+            /* header desktop */
             header img{
                 width: 400px;
             }
             header{
                 justify-content: space-around;
             }
-           
+
+            /* main bebidas desktop */
+
+            .main-bebidas{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "h1 h1 h1"
+                "h2 h2 h2"
+                "equi-vege ingre-vege ingre-vege"
+                "vegetal proce-vege proce-vege"
+            }
+            .main-bebidas h1{
+                grid-area: h1;
+            }
+            .main-bebidas h2{
+                grid-area: h2;
+            }
+            .main-bebidas .equi-vege{
+                grid-area: equi-vege;
+            }
+            .main-bebidas .ingre-vege{
+                grid-area: ingre-vege;
+            }
+            .main-bebidas .vegetal{
+                grid-area: vegetal;
+            }
+            .main-bebidas .proce-vege{
+                grid-area: proce-vege;
+            }
+
+            /* main contacto desktop */
+
         }
         
       
