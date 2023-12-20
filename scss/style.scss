@@ -1,0 +1,14 @@
+@import "utilities/reset";
+@import "utilities/globals";
+@import "utilities/mixin";
+@import "utilities/lists";
+
+@import "components/header";
+@import "components/footer";
+@import "pages/main-index";
+@import "pages/main-dulce";
+@import "pages/main-salado";
+@import "pages/main-bebidas";
+@import "pages/main-contacto";
+@import "utilities/media-tablet";
+@import "utilities/media-desktop";

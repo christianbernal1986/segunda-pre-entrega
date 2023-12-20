@@ -1,0 +1,100 @@
+  /* desktop */
+
+/* main dulce desktop*/
+
+@media (min-width: 1024px) {
+    .main-dulce{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "h1 h1 h1"
+        "h2 h2 h2"
+        "equipamiento ingredientes ingredientes"
+        "flan procedimiento procedimiento";
+        h1{
+            grid-area: h1;
+        }
+            h2{
+                grid-area: h2;
+            }
+                .equipamiento{
+                    grid-area: equipamiento;
+                }
+                    .flan{
+                        grid-area: flan;
+                    }
+                        .ingredientes{
+                            grid-area: ingredientes;
+                        }
+                            .procedimiento{
+                                grid-area: procedimiento;
+                            }
+    }
+
+    /* main salado desktop */
+
+    .main-salado{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "h1 h1 h1"  
+        "h2 h2 h2"
+        "ingre-salado ingre-salado proce-salado"
+        "pastel pastel proce-salado ";
+        h1{
+            grid-area: h1;
+        }
+            h2{
+                grid-area: h2;
+            }
+                .pastel{
+                    grid-area: pastel;
+                }
+                    .ingre.salado{
+                        grid-area: ingre-salado;
+                    }
+                        .proce-salado{
+                            grid-area: proce-salado;
+                        }
+    }
+
+    /* header desktop */
+
+    header{
+        justify-content: space-around;
+        div{
+            img{
+             width: 400px;
+            }
+        }
+    }
+
+     /* main bebidas desktop */
+
+     .main-bebidas{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "h1 h1 h1"
+        "h2 h2 h2"
+        "equi-vege ingre-vege ingre-vege"
+        "vegetal proce-vege proce-vege";
+        h1{
+            grid-area: h1;
+        }
+            h2{
+                grid-area: h2;
+            }
+                .equi-vege{
+                    grid-area: equi-vege;
+                }
+                    .ingre-vege{
+                        grid-area: ingre-vege;
+                    }
+                        .vegetal{
+                            grid-area: vegetal;
+                        }
+                            .proce-vege{
+                                grid-area: proce-vege;
+                            }
+     }
+
+}

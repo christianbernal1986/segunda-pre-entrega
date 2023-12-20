@@ -1,0 +1,117 @@
+/* tablet */
+/* header tablet */
+
+@media (min-width: 768px) {
+    header{
+        flex-direction: row;
+        div{
+            margin: 30px;
+           
+        }
+        nav{
+            margin-left: 10px;
+            ul{
+                display: flex;
+                column-gap: 10px;
+            }
+        }
+    }
+    /*main dulce tablet */
+
+    .main-dulce{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 0.2fr);
+        grid-template-areas: 
+        "h1 h1"
+        "h2 h2"
+        "equipamiento ingredientes"
+        "flan procedimiento";
+        h1{
+            grid-area: h1;
+        }
+            h2{
+                grid-area: h2;
+            }
+                .equipamiento{
+                    grid-area: equipamiento;
+                    ul{
+                        margin-top: 40px;
+                    }
+                }
+                    .flan{
+                        grid-area: flan;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                        .ingredientes{
+                            grid-area: ingredientes;
+                        }
+                            .precedimiento{
+                                grid-area: procedimiento;
+                            }
+    }
+
+    /* main salado tablet */
+
+    .main-salado{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 0.2fr);
+        grid-template-areas: 
+        "h1 h1"  
+        "h2 h2"
+        "ingre-salado pastel"
+        "proce-salado proce-salado";
+        h1{
+            grid-area: h1;
+        }
+            h2{
+                grid-area: h2;
+            }
+                .pastel{
+                    grid-area: pastel;
+                    img{
+                        object-fit: cover;
+                    }
+                }
+                    .ingre-salado{
+                        grid-area: ingre-salado;
+                    }
+                        .proce-salado{
+                            grid-area: proce-salado;
+                        }
+
+    }
+
+    /* main bebidas tablet */
+
+    .main-bebidas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 0.2fr);
+        grid-template-areas: 
+        "h1 h1"
+        "h2 h2"
+        "equi-vege ingre-vege"
+        "vegetal proce-vege";
+            h1{
+                grid-area: h1;
+            }
+                h2{
+                    grid-area: h2;
+                }
+                    .equi-vege{
+                        grid-area: equi-vege;
+                    }
+                        .ingre-vege{
+                            grid-area: ingre-vege;
+                        }
+                            .vegetal{
+                                grid-area: vegetal;
+                            }
+                                .proce-vege{
+                                    grid-area: proce-vege;
+                                }
+        }
+    
+
+}

@@ -1,0 +1,32 @@
+/* footer */
+
+footer{
+    display: grid;
+    grid-template-rows: auto;
+    background-color: rgb(214, 209, 209);
+    border-top: solid 1px black;
+    h1{
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        font-size: 5rem;
+        margin: 3rem;
+    }
+    .container{
+        div{
+            .since{
+                text-align: center;
+                font-size: 2rem;
+            }
+            .iconos{
+                text-align: center;
+                font-size: 2rem;
+            }
+            .alimentos{
+                text-align: center;
+                font-size: 2rem;
+            }
+
+        }
+
+    }
+}

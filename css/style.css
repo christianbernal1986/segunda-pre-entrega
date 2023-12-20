@@ -1,545 +1,492 @@
-html{
-    font-size: 62.5%;
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* estilos globales */
+html {
+  font-size: 62.5%;
 }
 
 /* header */
-
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(214, 209, 209);
-    
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(214, 209, 209);
 }
-header nav ul{
-    list-style: none;
-    font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 5px;   
+header div {
+  border-radius: 20px;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
+header div img {
+  width: 100%;
+  height: 100%;
 }
-header div{
-    border-radius: 20px;
-    box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
-    overflow: hidden;
-    
+header nav {
+  margin-top: 10px;
 }
-header img{
-    width: 100%;
-    height: 100%;
+header nav ul {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 5px;
 }
-header nav{
-    margin-top: 10px;
-}
-
-/* main index */
-
-.main-index{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2 auto);
-    background-color: rgb(214, 209, 209)
-}
-.main-index div p{
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-}
-.main-index div{
-    border: solid 1px;
-    border-color: aliceblue;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 2rem;
-    box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
-}
-.main-index h1{
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 4rem;
+header nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 /* footer */
+footer {
+  display: grid;
+  grid-template-rows: auto;
+  background-color: rgb(214, 209, 209);
+  border-top: solid 1px black;
+}
+footer h1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 5rem;
+  margin: 3rem;
+}
+footer .container div .since {
+  text-align: center;
+  font-size: 2rem;
+}
+footer .container div .iconos {
+  text-align: center;
+  font-size: 2rem;
+}
+footer .container div .alimentos {
+  text-align: center;
+  font-size: 2rem;
+}
 
-footer{
-    display: grid;
-    grid-template-rows: auto;
-    background-color: rgb(214, 209, 209);
-    border-top: solid 1px black;
-    
+/* main index */
+.main-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2 auto);
+  background-color: rgb(214, 209, 209);
 }
-footer h1{
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 5rem;
-    margin: 3rem;
+.main-index h1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 4rem;
 }
-footer .since{
-    text-align: center;
-    font-size: 2rem;
+.main-index div {
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 2rem;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
-footer .iconos{
-    text-align: center;   
-}
-footer .alimentos{
-    text-align: center;
-    font-size: 2rem;
+.main-index div p {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
 }
 
 /* main dulce */
-
-
-.main-dulce{
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6 auto);
-    background-color: rgb(214, 209, 209)
+.main-dulce {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6 auto);
+  background-color: rgb(214, 209, 209);
 }
-.main-dulce div{
-    border: solid 1px;
-    border-color: aliceblue;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 2rem;
-    box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
-   
-} 
-.main-dulce ul{
-    list-style: none;
+.main-dulce h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-dulce ol{
-    list-style: none;
+.main-dulce h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-dulce li{
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    margin-right: 15px;
-
-
+.main-dulce div {
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 2rem;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
-.main-dulce img{
-    width: 100%;
-    height: 100%;
-     
+.main-dulce div img {
+  width: 100%;
+  height: 100%;
 }
-
-.main-dulce .flan{
-    padding: 0px;
-    overflow: hidden;
+.main-dulce div h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-dulce h3{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-dulce ul {
+  list-style: none;
 }
-.main-dulce h2{
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-dulce ul li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
 }
-.main-dulce h1{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+.main-dulce div ol {
+  list-style: none;
+}
+.main-dulce div ol li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
+}
+.main-dulce .flan {
+  padding: 0px;
+  overflow: hidden;
 }
 
 /* main salado */
-
-.main-salado{
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5 auto);
-    background-color: rgb(214, 209, 209)
+.main-salado {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 auto);
+  background-color: rgb(214, 209, 209);
 }
-.main-salado div{
-    border: solid 1px;
-    border-color: aliceblue;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 2rem;
-    box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
+.main-salado h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-salado ul{
-    list-style: none;
+.main-salado h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-salado ol{
-    list-style: none;
+.main-salado div {
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 2rem;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
-.main-salado li{
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    margin-right: 15px;
+.main-salado div img {
+  width: 100%;
+  height: 100%;
 }
-.main-salado img{
-    width: 100%;
-    height: 100%;
+.main-salado div h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-salado .pastel{
-    padding: 0px;
-    overflow: hidden;
+.main-salado div ul {
+  list-style: none;
 }
-.main-salado h4{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-salado div ul li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
 }
-.main-salado h3{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-salado div ul section h4 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 15px;
 }
-.main-salado h2{
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-salado div ul section ul li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 30px;
 }
-.main-salado h1{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-salado div ol {
+  list-style: none;
+}
+.main-salado div ol li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
+}
+.main-salado .pastel {
+  padding: 0px;
+  overflow: hidden;
 }
 
 /* main bebidas */
-
-.main-bebidas{
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6 auto);
-    background-color: rgb(214, 209, 209)
+.main-bebidas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6 auto);
+  background-color: rgb(214, 209, 209);
 }
-.main-bebidas div{
-    border: solid 1px;
-    border-color: aliceblue;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 2rem;
-    box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
+.main-bebidas h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-bebidas ul{
-    list-style: none;
+.main-bebidas h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-bebidas ol{
-    list-style: none;
+.main-bebidas div {
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 2rem;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
-.main-bebidas li{
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    margin-right: 15px;
+.main-bebidas div img {
+  width: 100%;
+  height: 100%;
 }
-.main-bebidas img{
-    width: 100%;
-    height: 100%;
+.main-bebidas div h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.main-bebidas .vegetal{
-    padding: 0px;
-    overflow: hidden;
+.main-bebidas div ul {
+  list-style: none;
 }
-.main-bebidas h3{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-bebidas div ul li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
 }
-.main-bebidas h2{
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-bebidas div ol {
+  list-style: none;
 }
-.main-bebidas h1{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.main-bebidas div ol li {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-right: 15px;
+}
+.main-bebidas .vegetal {
+  padding: 0px;
+  overflow: hidden;
 }
 
-/* maim contacto */
-
-.main-contacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2 auto);
-    background-color: rgb(214, 209, 209)
+/* main contacto */
+.main-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2 auto);
+  background-color: rgb(214, 209, 209);
 }
-.main-contacto form label{
-    display: block;
-    margin-left: 20px;
-    }
-    .main-contacto form input{
-        margin-left: 20px;
-        
-    }
-    .main-contacto textarea{
-        margin-left: 20px; 
-    }
-    .main-contacto h2{
-        margin-left: 20px;
-    }
-    .main-contacto div{
-        width: 300px;
-        height: 400px;
-        
-    }
-    .main-contacto textarea{
-        margin-top: 20px;
-        border: solid 1px;
-        border-color: aliceblue;
-        border-radius: 20px;
-        box-shadow: 3px 4px 28px 0px rgba(0,0,0,0.75);
-    }
-    .main-contacto input{
-        margin-left: 20px;
-    }
-    .main-contacto section .limpiar{
-        margin-left: 10px;
-    }
-    .main-contacto h1{
-        font-size: 60px;
-    }
-    .main-contacto h2{
-        text-align: center;
-        font-size: 4rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .main-contacto h1{
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+.main-contacto section div {
+  width: 300px;
+  height: 400px;
+}
+.main-contacto section div h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 20px;
+}
+.main-contacto section div form label {
+  display: block;
+  margin-left: 20px;
+}
+.main-contacto section div form input {
+  margin-left: 20px;
+}
+.main-contacto section div textarea {
+  margin-top: 20px;
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 3px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 20px;
+}
+.main-contacto section div input {
+  margin-left: 20px;
+}
+.main-contacto section div .limpiar {
+  margin-left: 10px;
+}
 
-    /* tablet */
+/* tablet */
+/* header tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  header div {
+    margin: 30px;
+  }
+  header nav {
+    margin-left: 10px;
+  }
+  header nav ul {
+    display: flex;
+    column-gap: 10px;
+  }
+  /*main dulce tablet */
+  .main-dulce {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.2fr);
+    grid-template-areas: "h1 h1" "h2 h2" "equipamiento ingredientes" "flan procedimiento";
+  }
+  .main-dulce h1 {
+    grid-area: h1;
+  }
+  .main-dulce h2 {
+    grid-area: h2;
+  }
+  .main-dulce .equipamiento {
+    grid-area: equipamiento;
+  }
+  .main-dulce .equipamiento ul {
+    margin-top: 40px;
+  }
+  .main-dulce .flan {
+    grid-area: flan;
+  }
+  .main-dulce .flan img {
+    object-fit: cover;
+  }
+  .main-dulce .ingredientes {
+    grid-area: ingredientes;
+  }
+  .main-dulce .precedimiento {
+    grid-area: procedimiento;
+  }
+  /* main salado tablet */
+  .main-salado {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.2fr);
+    grid-template-areas: "h1 h1" "h2 h2" "ingre-salado pastel" "proce-salado proce-salado";
+  }
+  .main-salado h1 {
+    grid-area: h1;
+  }
+  .main-salado h2 {
+    grid-area: h2;
+  }
+  .main-salado .pastel {
+    grid-area: pastel;
+  }
+  .main-salado .pastel img {
+    object-fit: cover;
+  }
+  .main-salado .ingre-salado {
+    grid-area: ingre-salado;
+  }
+  .main-salado .proce-salado {
+    grid-area: proce-salado;
+  }
+  /* main bebidas tablet */
+  .main-bebidas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.2fr);
+    grid-template-areas: "h1 h1" "h2 h2" "equi-vege ingre-vege" "vegetal proce-vege";
+  }
+  .main-bebidas h1 {
+    grid-area: h1;
+  }
+  .main-bebidas h2 {
+    grid-area: h2;
+  }
+  .main-bebidas .equi-vege {
+    grid-area: equi-vege;
+  }
+  .main-bebidas .ingre-vege {
+    grid-area: ingre-vege;
+  }
+  .main-bebidas .vegetal {
+    grid-area: vegetal;
+  }
+  .main-bebidas .proce-vege {
+    grid-area: proce-vege;
+  }
+}
+/* desktop */
+/* main dulce desktop*/
+@media (min-width: 1024px) {
+  .main-dulce {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h1 h1 h1" "h2 h2 h2" "equipamiento ingredientes ingredientes" "flan procedimiento procedimiento";
+  }
+  .main-dulce h1 {
+    grid-area: h1;
+  }
+  .main-dulce h2 {
+    grid-area: h2;
+  }
+  .main-dulce .equipamiento {
+    grid-area: equipamiento;
+  }
+  .main-dulce .flan {
+    grid-area: flan;
+  }
+  .main-dulce .ingredientes {
+    grid-area: ingredientes;
+  }
+  .main-dulce .procedimiento {
+    grid-area: procedimiento;
+  }
+  /* main salado desktop */
+  .main-salado {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "h1 h1 h1" "h2 h2 h2" "ingre-salado ingre-salado proce-salado" "pastel pastel proce-salado ";
+  }
+  .main-salado h1 {
+    grid-area: h1;
+  }
+  .main-salado h2 {
+    grid-area: h2;
+  }
+  .main-salado .pastel {
+    grid-area: pastel;
+  }
+  .main-salado .ingre.salado {
+    grid-area: ingre-salado;
+  }
+  .main-salado .proce-salado {
+    grid-area: proce-salado;
+  }
+  /* header desktop */
+  header {
+    justify-content: space-around;
+  }
+  header div img {
+    width: 400px;
+  }
+  /* main bebidas desktop */
+  .main-bebidas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h1 h1 h1" "h2 h2 h2" "equi-vege ingre-vege ingre-vege" "vegetal proce-vege proce-vege";
+  }
+  .main-bebidas h1 {
+    grid-area: h1;
+  }
+  .main-bebidas h2 {
+    grid-area: h2;
+  }
+  .main-bebidas .equi-vege {
+    grid-area: equi-vege;
+  }
+  .main-bebidas .ingre-vege {
+    grid-area: ingre-vege;
+  }
+  .main-bebidas .vegetal {
+    grid-area: vegetal;
+  }
+  .main-bebidas .proce-vege {
+    grid-area: proce-vege;
+  }
+}
 
-    @media (min-width: 768px) {
-        header{
-            flex-direction: row;
-        }
-        header nav ul{
-            display: flex;
-            column-gap: 10px;
-        }
-        header nav{
-            margin-left: 10px;
-        }
-        header div{
-            margin: 30px;
-        }
-
-        /* main index tablet */
-       
-        
-        /* main dulce tablet */
-            .main-dulce{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 0.2fr);
-                grid-template-areas: 
-                "h1 h1"
-                "h2 h2"
-                "equipamiento ingredientes"
-                "flan procedimiento"
-            }
-            .main-dulce h1{
-                grid-area: h1;
-
-            }
-            .main-dulce h2{
-                grid-area: h2;
-            }
-            .main-dulce .equipamiento{
-                grid-area: equipamiento;
-            }
-            .main-dulce .flan{
-                grid-area: flan;
-            }
-            .main-dulce .ingredientes{
-                grid-area: ingredientes;
-            }
-            .main-dulce .procedimiento{
-                grid-area: procedimiento;
-            }
-            .main-dulce .equipamiento ul{
-                margin-top: 40px;
-            }
-            .main-dulce img{
-                object-fit: cover;
-            }
-
-            /* main salado tablet */
-
-            .main-salado{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 0.2fr);
-                grid-template-areas: 
-                "h1 h1"  
-                "h2 h2"
-                "ingre-salado pastel"
-                "proce-salado proce-salado"
-            }
-            .main-salado h1{
-                grid-area: h1;
-            }
-            .main-salado h2{
-                grid-area: h2;
-            }
-            .main-salado .pastel{
-                grid-area: pastel;
-            }
-            .main-salado .ingre-salado{
-                grid-area: ingre-salado;
-            }
-            .main-salado .proce-salado{
-                grid-area: proce-salado;
-            }
-            .main-salado img{
-                object-fit: cover;
-            }
-           
-            /* main bebidas tablet */
-
-            .main-bebidas{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 0.2fr);
-                grid-template-areas: 
-                "h1 h1"
-                "h2 h2"
-                "equi-vege ingre-vege"
-                "vegetal proce-vege"
-            }
-            .main-bebidas h1{
-                grid-area: h1;
-            }
-            .main-bebidas h2{
-                grid-area: h2;
-            }
-            .main-bebidas .equi-vege{
-                grid-area: equi-vege;
-            }
-            .main-bebidas .ingre-vege{
-                grid-area: ingre-vege;
-            }
-            .main-bebidas .vegetal{
-                grid-area: vegetal;
-            }
-            .main-bebidas .proce-vege{
-                grid-area: proce-vege;
-            }
-
-      
-
-        }
-
-        /* desktop */
-
-        /* main dulce desktop*/
-
-        @media (min-width: 1024px) {
-            .main-dulce{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas: 
-                "h1 h1 h1"
-                "h2 h2 h2"
-                "equipamiento ingredientes ingredientes"
-                "flan procedimiento procedimiento"
-            }
-            .main-dulce h1{
-                grid-area: h1;
-
-            }
-            .main-dulce h2{
-                grid-area: h2;
-            }
-            .main-dulce .equipamiento{
-                grid-area: equipamiento;
-            }
-            .main-dulce .flan{
-                grid-area: flan;
-            }
-            .main-dulce .ingredientes{
-                grid-area: ingredientes;
-            }
-            .main-dulce .procedimiento{
-                grid-area: procedimiento;
-            }
-
-            /* main salado desktop */
-
-            .main-salado{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(4, auto);
-                grid-template-areas: 
-                "h1 h1 h1"  
-                "h2 h2 h2"
-                "ingre-salado ingre-salado proce-salado"
-                "pastel pastel proce-salado "
-            }
-            .main-salado h1{
-                grid-area: h1;
-            }
-            .main-salado h2{
-                grid-area: h2;
-            }
-            .main-salado .pastel{
-                grid-area: pastel;
-            }
-            .main-salado .ingre-salado{
-                grid-area: ingre-salado;
-            }
-            .main-salado .proce-salado{
-                grid-area: proce-salado;
-            }
-            
-            /* header desktop */
-            header img{
-                width: 400px;
-            }
-            header{
-                justify-content: space-around;
-            }
-
-            /* main bebidas desktop */
-
-            .main-bebidas{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas: 
-                "h1 h1 h1"
-                "h2 h2 h2"
-                "equi-vege ingre-vege ingre-vege"
-                "vegetal proce-vege proce-vege"
-            }
-            .main-bebidas h1{
-                grid-area: h1;
-            }
-            .main-bebidas h2{
-                grid-area: h2;
-            }
-            .main-bebidas .equi-vege{
-                grid-area: equi-vege;
-            }
-            .main-bebidas .ingre-vege{
-                grid-area: ingre-vege;
-            }
-            .main-bebidas .vegetal{
-                grid-area: vegetal;
-            }
-            .main-bebidas .proce-vege{
-                grid-area: proce-vege;
-            }
-
-            /* main contacto desktop */
-
-        }
-        
-      
-         
-  
-  
+/*# sourceMappingURL=style.css.map */
